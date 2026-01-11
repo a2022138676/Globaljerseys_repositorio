@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS addresses (
   user_id INT NOT NULL,
   full_name VARCHAR(160) NOT NULL,
   phone VARCHAR(40) NOT NULL,
-  company VARCHAR(120) NULL,
   address1 VARCHAR(180) NOT NULL,
   address2 VARCHAR(180) NULL,
   city VARCHAR(120) NOT NULL,
@@ -69,12 +68,3 @@ CREATE TABLE IF NOT EXISTS order_items (
     FOREIGN KEY (order_id) REFERENCES orders(id)
     ON DELETE CASCADE
 );
-
-INSERT INTO encourage_users (first_name, last_name, email, password_hash)
-VALUES
-('Joao', 'Santos', 'joaosantos@gmail.com', '1234'),
-('Ana', 'Lopes', 'analopes@gmail.com', '5678');
-
-
-
-

@@ -13,7 +13,6 @@ if (!empty($_SESSION['cart'])) {
   <div class="container">
     <nav class="nav">
       <a class="logo" href="index.php">Global Jerseys</a>
-
       <ul class="nav-links">
         <li><a href="index.php" class="<?= $active==='inicio'?'active':'' ?>">Início</a></li>
         <li><a href="catalogo.php" class="<?= $active==='catalogo'?'active':'' ?>">Catálogo</a></li>

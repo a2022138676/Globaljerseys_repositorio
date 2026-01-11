@@ -1,3 +1,4 @@
+<?php require __DIR__ . '/auth.php'; ?>
 <?php
 session_start();
 ?>
